@@ -29,7 +29,7 @@ class WriterSeeder extends Seeder
             'writer_image' => 'http://localhost:8000/assets/datascience_writer_image.png',
         ]);
 
-        // Update data untuk writer dengan nama "Abi Firmansyah"
+
         Writer::where('name', 'Abi Firmansyah')->update([
             'writer_image' => 'http://localhost:8000/assets/network_writer_image.png',
         ]);

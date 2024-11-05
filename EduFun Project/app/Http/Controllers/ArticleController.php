@@ -36,6 +36,7 @@ class ArticleController extends Controller
         return view('edufun.detail', compact('article'));
     }
 
+    // untuk display article pada page Popular berdasarkan urutan views terbanyak ke terdikit
     public function popular(){
         $articles = Article::orderBy('views','desc')->paginate(3);
         return view('edufun.popular', compact('articles'));
